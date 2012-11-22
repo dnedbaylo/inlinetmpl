@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="css/ie.css" type="text/css" />
+        <![endif]-->
+        <script type="text/javascript">
+            var templateContext = {
+                items: ["itemA", "itemB", "itemC", "itemD"]
+            };
+        </script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://raw.github.com/documentcloud/underscore/master/underscore-min.js"></script>
+        <script type="text/javascript" src="https://raw.github.com/dnedbaylo/inlinetmpl/master/inlinetmpl.js"></script>
+	</head>
+    <body>
+        <div template="template_a">
+            <ul>
+                <% for(var i = 0; i < items.length; ++i) { %>
+                <li><%= items[i] %></li>
+                <% } %>
+            </ul>
+        </div>
+	</body>
+</html>
